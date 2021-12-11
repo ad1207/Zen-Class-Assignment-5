@@ -1,4 +1,8 @@
 class Circle{
+    constructor(radius,color){
+        this.radius=radius
+        this.color=color
+    }
     setRadius(radius){
         this.radius=radius
     }
@@ -21,9 +25,7 @@ class Circle{
         return 2*Math.PI*this.radius
     }
 }
-let c = new Circle()
-c.setColor('red')
-c.setRadius(1.0)
+let c = new Circle(1.0,'red)
 console.log(c.toString())
 console.log(c.getArea())
 console.log(c.getCircumference())
